@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 300, 300);
-    image(clown, noseX, noseY, 50, 40);
+    image(clown, noseX, noseY, 50, 48);
 }
 
 function modelLoaded() {
@@ -32,7 +32,7 @@ function take_snapshot() {
 function gotPoses(results) {
     if (results.length > 0) {
         console.log(results);
-        noseX = results[0].pose.nose.x - 20;
+        noseX = results[0].pose.nose.x - 22;
         noseY = results[0].pose.nose.y - 15;
         console.log("nose x =" + noseX);
         console.log("nose y =" + noseY);
