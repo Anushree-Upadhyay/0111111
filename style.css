@@ -1,0 +1,30 @@
+h3 {
+    font-size: 25px !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-info:hover {
+   background-color: cadetblue;
+}
+
+ canvas {
+     margin-top: 40px;
+     animation-name: Color;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes Color {
+     from {
+         box-shadow: 1px 1px 38px teal;
+     }
+     to {
+        box-shadow: 1px 1px 38px purple;
+    }
+ }
